@@ -1,0 +1,39 @@
+.logosearch{
+    display: flex;
+    align-items: center;
+    gap: .75rem;
+    justify-content: space-between;
+    margin-bottom: 20px;
+
+    span{
+        font-size: 25px;
+        cursor: pointer;
+        font-weight: 700;
+    }
+    .search{
+        display: flex;
+        align-items: center;
+        background-color: lightgray;
+        border-radius: 10px;
+
+        input{
+            outline: 0;
+            border: 0;
+            background-color: transparent;
+            padding: 5px 10px 5px 10px;
+        }
+        .s_icon{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background:linear-gradient(106.23deg, yellow,orange) ;
+            border-bottom-right-radius: 10px;
+            border-top-right-radius: 10px;
+            padding: 5px;
+            width: 30px;
+            cursor: pointer;
+        }
+
+        
+    }
+}

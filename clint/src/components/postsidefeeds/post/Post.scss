@@ -1,0 +1,96 @@
+.post{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 20px;
+    border-radius: 10px;
+    -webkit-box-shadow: 0px 0px 3px 0px rgba(0,0,0,0.66);
+    -moz-box-shadow: 0px 0px 3px 0px rgba(0,0,0,0.66);
+    box-shadow: 0px 0px 3px 0px rgba(0,0,0,0.66);
+
+    .personInfo{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        .div-1{
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            cursor: pointer;
+    
+            img{
+                height: 35px;
+                width: 35px;
+                border-radius: 50%;
+                object-fit: cover;
+            }
+            span{
+                font-size: 18px;
+                font-weight: 500;
+            }
+        }
+        .div-2{
+            padding: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            border-radius: 50%;
+            transition: all .7s ease-out;
+        }
+        .div-2:hover{
+            -webkit-box-shadow: 0px 0px 3px 0px rgba(0,0,0,0.66);
+            -moz-box-shadow: 0px 0px 3px 0px rgba(0,0,0,0.66);
+            box-shadow: 0px 0px 3px 0px rgba(0,0,0,0.66);
+            background-color: whitesmoke;
+        }
+    }
+    img{
+        cursor: pointer;
+        max-height: 20rem;
+        width: 100%;
+        object-fit: cover;
+    }
+
+    .postReaction{
+        display: flex;
+        align-items: center;
+        gap: 20px;
+
+        .reaction{
+            cursor: pointer;
+            padding: 5px 20px 5px 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 10px;
+            transition: all .5s ease-in-out;
+        }
+        .reaction:hover{
+            background-color: whitesmoke;
+            -webkit-box-shadow: 0px 1px 3px 0px rgba(0,0,0,0.25);
+            -moz-box-shadow: 0px 1px 3px 0px rgba(0,0,0,0.25);
+            box-shadow: 0px 1px 3px 0px rgba(0,0,0,0.25);
+        }
+    }
+    .descinfo{
+        display: flex;
+        flex-direction: column;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        span{
+           font-size: 12px; 
+        }
+        abbr{
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: inherit;
+            text-decoration: none;
+            cursor: pointer;
+        }
+    }
+    
+    
+
+}

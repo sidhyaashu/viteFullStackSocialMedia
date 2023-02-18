@@ -1,0 +1,75 @@
+.rightside{
+    height: 100vh;
+    overflow: scroll;
+    padding: 10px 30px 10px 45px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    .topbarIcons{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        div{
+            padding: 10px 30px 10px 30px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: all .5s ease-out;
+
+        }
+        div:hover{
+            background-color: whitesmoke;
+            -webkit-box-shadow: 0px 0px 3px 0px rgba(0,0,0,0.26);
+            -moz-box-shadow: 0px 0px 3px 0px rgba(0,0,0,0.26);
+            box-shadow: 0px 0px 3px 0px rgba(0,0,0,0.26);
+        }
+
+    }
+    .s_btn{
+        width: 100%;
+        height: 50px;
+        border-radius: 10px;
+        background:linear-gradient(106.23deg, yellow,orange) ;
+        -webkit-box-shadow: 0px 0px 3px 0px rgba(0,0,0,0.26);
+        -moz-box-shadow: 0px 0px 3px 0px rgba(0,0,0,0.26);
+        box-shadow: 0px 0px 3px 0px rgba(0,0,0,0.26);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 70px;
+        cursor: pointer;
+        transition: all .7s ease-in-out;
+        span{
+            color: white;
+            font-size: 18px;
+            font-weight: 700;
+            letter-spacing: .7px;
+        }
+    }
+    .s_btn:hover{
+        -webkit-box-shadow: 0px 0px 3px 0px rgba(0,0,0,0.56);
+        -moz-box-shadow: 0px 0px 3px 0px rgba(0,0,0,0.56);
+        box-shadow: 0px 0px 3px 0px rgba(0,0,0,0.56);   
+    }
+
+}
+
+.openModal{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    outline: 0;
+    border: 0;
+    width: 650px;
+    height: 600px;
+    .om_crosBtn{
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        cursor: pointer;
+
+    }
+}

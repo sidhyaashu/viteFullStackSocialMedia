@@ -1,0 +1,84 @@
+.infocard{
+    display: flex;
+    flex-direction: column;
+    padding: 25px;
+    margin-top: 30px;
+    border-radius: 10px;
+    -webkit-box-shadow: 0px 0px 3px 0px rgba(0,0,0,0.26);
+    -moz-box-shadow: 0px 0px 3px 0px rgba(0,0,0,0.26);
+    box-shadow: 0px 0px 3px 0px rgba(0,0,0,0.26);
+    position: relative;
+
+    .infohead{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 10px;
+
+        h3{
+            cursor: default;
+        }
+        div{
+            font-size: 12px;
+            padding: 10px;
+            cursor: pointer;
+            border-radius: 50%;
+            transition: all 1s ease-out;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            // background-color: whitesmoke;
+            // -webkit-box-shadow: 1px 1px 3px 0px rgba(0,0,0,0.25);
+            // -moz-box-shadow: 1px 1px 3px 0px rgba(0,0,0,0.25);
+            // box-shadow: 1px 1px 3px 0px rgba(0,0,0,0.25);
+        }
+        div:hover{
+            background-color: lightgray;
+            -webkit-box-shadow: 1px 1px 3px 0px rgba(0,0,0,0.65);
+            -moz-box-shadow: 1px 1px 3px 0px rgba(0,0,0,0.65);
+            box-shadow: 1px 1px 3px 0px rgba(0,0,0,0.65);
+        }
+    }
+    .info{
+        display: flex;
+        gap: 10px;
+        cursor: default;
+    }
+    
+    .l_btn{
+        width: 80px;
+        padding: 10px 10px;
+        border-radius: 10px;
+        background:linear-gradient(106.23deg, yellow,orange) ;
+        -webkit-box-shadow: 1px 1px 3px 0px rgba(0,0,0,0.25);
+        -moz-box-shadow: 1px 1px 3px 0px rgba(0,0,0,0.25);
+        box-shadow: 1px 1px 3px 0px rgba(0,0,0,0.25);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 15px;
+        cursor: pointer;
+        transition: all .7s ease-out;
+        align-self: flex-end;
+        span{
+            color: white;
+            font-size: 16px;
+            font-weight: 600;
+        }
+    }
+    .l_btn:hover{
+        -webkit-box-shadow: 1px 1px 3px 0px rgba(0,0,0,0.65);
+        -moz-box-shadow: 1px 1px 3px 0px rgba(0,0,0,0.65);
+        box-shadow: 1px 1px 3px 0px rgba(0,0,0,0.65); 
+        background:linear-gradient(106.23deg, rgb(245, 245, 0),rgb(244, 158, 0)) ;
+    }
+}
+.editModal{
+    position: absolute;
+    left: 50%;
+    outline: 0;
+    border: 0;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
